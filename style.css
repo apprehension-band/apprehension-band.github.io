@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Norwester";
+    src: url("norwester.otf");
+}
+@font-face {
+    font-family: "Zeroes Three";
+    src: url("Zeroes Three.otf");
+}
+@keyframes fall-from-top{
+    to{
+        transform: translateY(0%);
+    }
+}
+body{
+    background-size: 100% !important;
+    margin: 0 !important;
+}
+*{
+    scrollbar-color: #333 #111;
+    scrollbar-width: thin;
+}
+#navbar{
+    background: black;
+    height: 100px;
+    width: 100%;
+    font-family: "Norwester";
+}
+#navlinks{
+    float: right;
+    width: 75%;
+    height: 100%;
+    font-size: 20pt;
+    text-transform: capitalize;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    vertical-align: middle;
+    height: 100%;
+}
+#navlinks a{
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-left: 50px;
+    margin-right: 50px;
+    transition: linear 0.15s;
+    transform: translateY(-300%);
+}
+#navlinks a:hover{
+    color: grey;
+}
+#navlinks a:last-child{
+    margin-right: 75px;
+}
+.current_page{
+    text-shadow: 0 0 15px white;
+}
+.fall-in {
+    animation: fall-from-top 0.75s ease;
+    animation-fill-mode: both;
+    animation-delay: .25s
+}
+#logo{
+    height:80px;
+    width: auto;
+    margin: 10px;
+}
+.photo-container{
+    width: fit-content;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px black);
+}
+.photo-container img{
+    width: 40vw;
+    height: auto;
+}
+.spacer{
+    line-height: 100px;
+}
+.photo-subtitle{
+    background: #5557;
+    max-width: 50%;
+    padding: 5px;
+    color: white;
+    position: relative;
+    top: -20px;
+    font-family: "Zeroes Three";
+    text-transform: uppercase;
+}
