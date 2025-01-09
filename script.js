@@ -7,6 +7,7 @@ $(function() {
     if(document.referrer.split('/')[2]!=location.hostname){
         $('#navbar a').each(function(i){
             var item = $(this);
+            item.css("animate", "fall-from-top 0.75s ease")
             setTimeout(function() {
                 item.toggleClass('fall-in');
             }, 150*i);
