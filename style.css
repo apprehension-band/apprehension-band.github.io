@@ -44,7 +44,7 @@ body{
     vertical-align: middle;
     margin-left: 50px;
     margin-right: 50px;
-    transition: linear 0.15s;
+    transition: color 0.15s;
     transform: translateY(-300%);
 }
 #navlinks a:hover{
