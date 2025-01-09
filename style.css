@@ -57,7 +57,6 @@ body{
     text-shadow: 0 0 15px white;
 }
 .fall-in {
-    animation: fall-from-top 0.75s ease;
     animation-fill-mode: both;
     animation-delay: .25s
 }
