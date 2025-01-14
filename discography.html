@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>APPREHENSION | Official Website</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body{
+                background: linear-gradient(0deg, #00000099, #00000099), url("./images/background-tinted.jpg");
+            }
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <script>
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body onscroll="getScrollPercent()">
+        <div id="navbar">
+            <img src="./images/logo.png" id="logo">    
+            <div id="navlinks">
+                <a href="index.html">Home</a>
+                <a href="news.html">News</a>
+                <a href="live.html">Live Shows</a>
+                <a href="discography.html">Discography</a>
+                <a href="about.html">About</a>
+            </div>    
+        </div>
+        
+        <br class="spacer">
+        <center>
+
+            <!--content-->
+            <div class="release">
+                <a href="comingsoon.html">
+                <img src="./images/Seychelles_album_cover.jpg">
+                <p class="disco-sub">Album 1</p>
+                </a>
+            </div>
+            
+
+        </center>
+
+        <noscript>
+            <style>
+                #navbar a{
+                    transform: initial;
+                }
+            </style>
+        </noscript>
+
+        <script src="script.js"></script>
+        <script type="text/javascript" src="./vanilla-tilt.min.js"></script>
+        <script>
+            for(let i = 0; i < document.querySelectorAll(".release").length; i++){
+                document.querySelectorAll(".release")[i].setAttribute("data-tilt-max", "4");
+                document.querySelectorAll(".release")[i].setAttribute("data-tilt-speed", "200");
+                document.querySelectorAll(".release")[i].setAttribute("data-tilt-perspective", "500");
+                VanillaTilt.init(document.querySelectorAll(".release")[i]);
+            }
+        </script>
+    </body>
+</html>

@@ -1,13 +1,5 @@
 $(function() {
 
-    function getScrollPercent() {
-        var h = document.documentElement, 
-        b = document.body,
-        st = 'scrollTop',
-        sh = 'scrollHeight';
-        document.querySelector("body").style.backgroundPositionY = ((h[st]||b[st]) / ((h[sh]||b[sh]) - h.clientHeight) * - 2000) + "px";
-    }
-
     $('#navbar a').each(function() {
         if ($(this).attr('href') == location.href.split("/").slice(-1)){ $(this).addClass('current_page'); }
     });
@@ -29,5 +21,11 @@ $(function() {
             item.css("transform", "translateY(0%)")
         })
     }
+
+    var yOffset;  
+    $(window).scroll(function(){
+        yOffset=$(window).scrollTop()*2;
+        $("body").css('background-position', '0px '+-yOffset+'px');
+        })
 
 });
