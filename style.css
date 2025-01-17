@@ -69,6 +69,7 @@ body{
 }
 .fall-in {
     animation-fill-mode: both;
+    animation-name: fall-from-top;
     animation-delay: .25s
 }
 #logo{
@@ -121,4 +122,7 @@ body{
 }
 .release *{
     text-decoration: none !important;
+}
+.newstitle{
+    font-size: 16pt;
 }
