@@ -7,13 +7,12 @@ $(function() {
     if(document.referrer.split('/')[2]!=location.hostname){
         $('#navbar a').each(function(i){
             var item = $(this);
-            item.css("animate", "fall-from-top 0.75s ease")
             setTimeout(function() {
                 item.toggleClass('fall-in');
+                setTimeout(function() {
+                    item.css("transform", "translateY(0%)");
+                }, 900);
             }, 150*i);
-            setTimeout(function() {
-                item.css("transform", "translateY(0%)");
-            }, 250*i);
         })
     }else{
         $('#navbar a').each(function(i){

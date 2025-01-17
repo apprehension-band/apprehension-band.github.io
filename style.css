@@ -69,7 +69,7 @@ body{
 }
 .fall-in {
     animation-fill-mode: both;
-    animation-name: fall-from-top;
+    animation: fall-from-top 0.75s ease;
     animation-delay: .25s
 }
 #logo{
